@@ -3,17 +3,37 @@
 <head>
     <title>METRO</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/metro.css">
+    <link rel="stylesheet" href="../css/metro.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Portfolio METRO">
     <meta name="keywords" content="METRO, portfolio, designer, developer">
     <meta name="author" content="METRO">
-    <link rel="icon" href="img/favicon.ico">
+    <link rel="icon" href="/img/favicon.ico">
 </head>
 <body>
-    <h1>Welcome to my portfolio</h1>
-    <p>This is the home page.</p>
+    <div id="loading">
+        <div class="loading-icon"></div>
+    </div>
 
-    <script src="js/script.js"></script>
+    <div id="page">
+
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <a><img src="/img/logo.png" alt="METRO"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="/projects/mdib" onclick="navigate(event, '/projects/mdib')">MDIB</a></li>
+                <li><a href="/about">ABOUT</a></li>
+            </ul>
+
+        </nav>
+
+        <h1>Welcome to my portfolio!</h1>
+        <p>This is the home page.</p>
+
+    </div>
+
+    <script src="/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 </body>
 </html>
