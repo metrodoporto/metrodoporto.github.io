@@ -3,4 +3,4 @@ RewriteEngine On
 # Redirect all requests to index.html
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^portfolio/.*$ /portfolio/index.html [L]
+RewriteRule ^ /index.html [L]

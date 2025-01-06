@@ -7,9 +7,9 @@
 </head>
 <body>
     <script type="text/javascript">
-        // Redirect to index.html with the original path
-        var redirectPath = window.location.pathname;
-        window.location.replace(redirectPath);
+        // Redirect to the root URL with the original path appended as a query parameter
+        var originalPath = window.location.pathname + window.location.search + window.location.hash;
+        window.location.replace('/?redirect=' + encodeURIComponent(originalPath));
     </script>
 </body>
 </html>
