@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>METRO</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/metro.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio METRO">
+    <meta name="keywords" content="METRO, portfolio, designer, developer">
+    <meta name="author" content="METRO">
+    <link rel="icon" href="img/favicon.ico">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#/home" onclick="navigateTo('home')">Home</a></li>
+            <li><a href="#/project/project1" onclick="navigateTo('project-project1')">Project 1</a></li>
+            <li><a href="#/project/project2" onclick="navigateTo('project-project2')">Project 2</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="content">
+        <!-- Sections for different parts of the portfolio -->
+        <section id="home">
+            <h1>Welcome to my portfolio</h1>
+            <p>This is the home page.</p>
+        </section>
+        <section id="project-project1" style="display: none;">
+            <h1>Project 1</h1>
+            <p>Details about Project 1.</p>
+        </section>
+        <section id="project-project2" style="display: none;">
+            <h1>Project 2</h1>
+            <p>Details about Project 2.</p>
+        </section>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

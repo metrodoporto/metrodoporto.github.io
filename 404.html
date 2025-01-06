@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // Redirect to index.html with the original path
+        var redirectPath = window.location.pathname;
+        var newPath = "/index.html" + redirectPath;
+        window.location.replace(newPath);
+    </script>
+</body>
+</html>
