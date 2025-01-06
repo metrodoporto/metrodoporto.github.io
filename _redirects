@@ -1,0 +1,5 @@
+# Redirect the root URL to the main page
+/ /index.html
+
+# Redirect the clean URL for the project to the corresponding HTML file
+/projects/mdib /projects/mdib.html
