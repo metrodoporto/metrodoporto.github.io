@@ -1,14 +1,13 @@
 document.addEventListener("DOMContentLoaded", (event) => {
     const viewportWidth = window.innerWidth;
-
-    const durationAnim = (viewportWidth * 2.6) / 800;
+    const rotation = -(viewportWidth * -360)/700;
 
     document.querySelector('.loading-icon').style.opacity = 1;
 
     gsap.from(".loading-icon", { 
-        duration: durationAnim,
+        duration: 3,
         x: -(viewportWidth/2)-150,
-        rotation: 360,
+        rotation: 270,
     });
 
     console.log('Viewport Width:', viewportWidth);
@@ -27,7 +26,7 @@ function showLoadingScreen() {
 function hideLoadingScreen() {
 
     const viewportWidth = window.innerWidth;
-    const durationAnim = (viewportWidth * 2.6) / 800;
+    const rotation = -(viewportWidth * -360)/700;
 
     gsap.timeline()
     .to('#loading', {
@@ -38,14 +37,14 @@ function hideLoadingScreen() {
         }
     })
     .to('.loading-icon', {
-        duration: durationAnim,
+        duration: 3,
         x: viewportWidth/2-100,
-        rotation: -360,
+        rotation: -200,
     }, 0.1);
 }
 
 window.addEventListener('load', function() {
-    setTimeout(hideLoadingScreen, 4000); // You can adjust the timeout as needed
+    setTimeout(hideLoadingScreen, 3300); // You can adjust the timeout as needed
 });
 
 // Custom navigation function
