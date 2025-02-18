@@ -40,6 +40,7 @@ html {
                       linear-gradient(to right, var(--color2) 96%, var(--color3) 96%);
     color: var(--color4);
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 #empty {
@@ -133,8 +134,8 @@ body > div:not(#warning,#entrance,#empty) {
 }
 
 footer {
-    background-color: var(--color5);
-    color: var(--color6);
+    background-color: var(--darker-dark);
+    color: var(--lighter-green);
     bottom: 0;
     left: 0;
     width: 100%;
@@ -178,24 +179,217 @@ footer {
     padding-bottom: 18px;
 }
 
-#spacer {
-    height: 10px;
-    width: 50vw;
-    background-color: rgb(38, 38, 39, 0.7);
-    color: rgb(85, 85, 87, 0.7);
-    margin: 32px;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;
-    margin-left: auto;
-    margin-right: auto;
+#skills {
+    max-width: 60vw;
+    display: flex;
+    justify-content: space-between;
 }
 
-/* FONTS */
+#skills div {
+    display: flex;
+    margin-top: 48px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
-.darumadrop-one {
-    font-family: "Darumadrop One", serif;
-    font-weight: 400;
-    font-style: normal;
+#skills div div {
+    margin-top: 8px;
+    display: block;
+    background-color: var(--dark);
+    border-radius: 10px;
+    padding: 10px;
+    flex: auto auto;
+    margin-right: 25px;
+    width: 19.5vw;
+    height: auto;
+}
+
+#skills div div:last-child {
+    margin-right: 0;
+}
+
+#programming h1, #art h1 {
+    text-align: center;
+    font-size: 48px;
+}
+
+#programming > items, #art > items {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.05);
+    margin-top: 8px;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.icon {
+    width: 48px;
+    height: auto;
+}
+
+a {
+    margin-top: 8px;
+    display: inline-flex;
+    align-items: center;
+}
+
+a:first-child {
+    margin-top: 0;
+}
+
+c {
+    display: block;
+    align-self: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #00000000;
+    height: 32px;
+    width: 3px;
+    margin-left: 16px;
+    margin-right: 16px;
+    border-radius: 2px;
+}
+
+a p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+experience {
+    align-self: center;
+    font-size: 24px;
+}
+
+lit {
+    color: var(--warning-yellow);
+}
+
+#skills > p:not(#tag,#update-info) {
+    margin-top: 16px;
+    text-align: center;
+    color: gray;
+    font-size: 12px;
+}
+
+#projects {
+    width: 70vw;
+}
+
+#projects > h1 {
+    font-size: 24px;
+    margin-top: 48px;
+}
+
+#projects > p:not(#update-info,#tag) {
+    color: rgba(255, 255, 255, 0.70);
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+#projects > #list-projects > div {
+    display: inline-flex;
+    padding: 8px;
+    background-color: var(--dark);
+    border-radius: 4px;
+    margin-top: 16px;
+    height: 10vh;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+#list-projects > div > img {
+    display: flexbox;
+    height: 10vh;
+    width: auto;
+    flex: 0;
+}
+
+#list-projects > div > #text {
+    display: flexbox;
+    flex: 3;
+    margin-left: 16px;
+    bottom: auto;
+    top: auto;
+}
+
+#list-projects > div > #text h1 {
+    display: block;
+    font-size: 20px;
+    color: var(--warning-red);
+}
+
+#list-projects > div > #text p {
+    display: block;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#list-projects > div > #tags {
+    flex: 2;
+    margin-left: 16px;
+    margin-left: 16px;
+    text-align: center;
+}
+
+#job-t {
+    margin-top: 8px;
+}
+
+#project-t > div, #job-t > div {
+    display: inline-block;
+    padding: 3px;
+    border-radius: 2px;
+    background-color: rgb(163, 61, 61);
+}
+
+#list-projects > div > button {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 0;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#list-projects > div > button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+button > svg > path {
+    fill: #8c8c8c;
+    transition: fill 0.3s;
+}
+
+button:hover > svg > path {
+    fill: #bdbdbd !important;
+}
+
+nav {
+    position: fixed;
+    min-height: 20vh;
+    width: 3vw;
+    background-color: var(--darker-dark);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    align-self: center;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 10px 0 0 10px;
+    flex-wrap: wrap;
+}
+
+nav button:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+nav button {
+    background-color: #00000000;
+    border: 0;
+    cursor: pointer;
 }
 
 .delicious-handrawn {
