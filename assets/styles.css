@@ -406,3 +406,8 @@ nav button {
     font-variation-settings:
       "wdth" 100;
   }
+ 
+.darumadrop-one {
+    font-family: "Darumadrop One", serif;
+    font-weight: 400;
+}
