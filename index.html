@@ -1,39 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>METRO</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/metro.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Portfolio METRO">
-    <meta name="keywords" content="METRO, portfolio, designer, developer">
-    <meta name="author" content="METRO">
-    <link rel="icon" href="/img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="loading">
-        <div class="loading-icon"></div>
+    <div id="entrance">
+        <p>
+            <img class="corner bottom" src="/assets/img/corner.png">
+            Portfolio
+            <img class="corner top" src="/assets/img/corner.png">
+        </p>
     </div>
 
-    <div id="page">
-
-        <nav class="navbar">
-            <div class="navbar-logo">
-                <a><img src="/img/logo.png" alt="METRO"></a>
+    <div id="warning" class="open-sans"> This page is still in development! Sorry if something seems out of place. The page will be updated periodicaly, so if there's any missing information or feedback you'd like to give, please use the contacts below for it! <a>૮₍  ˶•⤙•˶ ₎ა</a></div>
+    
+    <div id="about">
+        <p id="tag" style="background-color: var(--darker-green);">About Me</p>
+        <p id="update-info"><i>Last Update was 17th February 2025.</i></p>
+        <div>
+            <div id="profile-pic">
+                <img src="/assets/img/profile-pic.png">
             </div>
-            <ul class="nav-links">
-                <li><a href="/projects/mdib" onclick="navigate(event, '/projects/mdib')">MDIB</a></li>
-                <li><a href="/about">ABOUT</a></li>
-            </ul>
-
-        </nav>
-
-        <h1>Welcome to my portfolio!</h1>
-        <p>This is the home page.</p>
-
+            <div class="about-text">
+                <h1 class="darumadrop-one">Howdy! ~<img src="/assets/img/star.png" style="display:inline;height:38px;margin-bottom:2.5px;transform:rotate(22.8deg);"></h1>
+                <p class="open-sans">My name is Ismael Sampaio, but some friends call me <i>Seal</i> since it's my favorite animal. I'm a finalist student in <b>Videogames and Multimedia Applications</b> at <b>Universidade Lusófona do Porto</b>.</p>
+                <p class="open-sans">I've always loved programming and anything related to technology. While I never explored much about hardware, I was fascinated by software. My journey started with <b>Minecraft modding and server management</b>, where I even earned some money from my work! Later, I dove into <b>game development</b>, and my knowledge grew exponentially.</p>
+                <p class="open-sans">Nowadays, I primarily work in <b>game development</b>, with occasional side projects in <b>web design</b>.</p>
+            </div>
+        </div>
     </div>
 
-    <script src="/js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <div id="empty"></div>
+
+    <div id="skills">
+        <p id="tag" style="background-color: #393866;">Skills & Experience</p>
+        <p id="update-info"><i>Last Update was 17th February 2025.</i></p>
+        <div>
+            <div id="programming">
+                <h1 class="darumadrop-one">Programming</h1>
+                <items>
+                    <a><img class="icon" src="/assets/img/icons/cpp.png" title="C++"><c>.</c><p>2 years</p><c>.</c><experience><lit>♦ ♦ ♦ ♦ ♦ ♦ ♦</lit> ♦ ♦ ♦</experience></a>
+                    <a><img class="icon" src="/assets/img/icons/csharp.png" title="C#"><c>.</c><p>2 years</p><c>.</c><experience><lit>♦ ♦ ♦ ♦ ♦ ♦ ♦ ♦</lit> ♦ ♦</experience></a>
+                    <a><img class="icon" src="/assets/img/icons/html.png" title="HTML"><c>.</c><p>1 years</p><c>.</c><experience><lit>♦ ♦ ♦</lit> ♦ ♦ ♦ ♦ ♦ ♦ ♦</experience></a>
+                    <a><img class="icon" src="/assets/img/icons/css.png" title="CSS"><c>.</c><p>1 years</p><c>.</c><experience><lit>♦ ♦</lit> ♦ ♦ ♦ ♦ ♦ ♦ ♦ ♦</experience></a>
+                    <a><img class="icon" src="/assets/img/icons/js.png" title="JavaScript"><c>.</c><p>1 years</p><c>.</c><experience><lit>♦ ♦ ♦ ♦</lit> ♦ ♦ ♦ ♦ ♦ ♦</experience></a>
+                    <a><img class="icon" src="/assets/img/icons/java.png" title="Java"><c>.</c><p>2 years</p><c>.</c><experience><lit>♦ ♦ ♦ ♦ ♦</lit> ♦ ♦ ♦ ♦ ♦</experience></a>
+                    <a><img class="icon" src="/assets/img/icons/sk.png" title="Skript"><c>.</c><p>6 years</p><c>.</c><experience><lit>♦ ♦ ♦ ♦ ♦ ♦ ♦ ♦ ♦</lit> ♦</experience></a>
+                    <a><img class="icon" src="/assets/img/icons/ue.png" title="Unreal Engine"><c>.</c><p>2 years</p><c>.</c><experience><lit>♦ ♦ ♦ ♦ ♦ ♦ ♦ ♦</lit> ♦ ♦</experience></a>
+                </items>
+            </div>
+            <div id="art">
+                <h1 class="darumadrop-one">Art</h1>
+                <items>
+                    <a><img class="icon" src="/assets/img/icons/ps.png" title="Photoshop"><c>.</c><p>6 years</p><c>.</c><experience><lit>♦ ♦ ♦ ♦ ♦</lit> ♦ ♦ ♦ ♦ ♦</experience></a>
+                    <a><img class="icon" src="/assets/img/icons/pr.png" title="Premiere Pro"><c>.</c><p>3 years</p><c>.</c><experience><lit>♦ ♦ ♦ ♦ ♦ ♦ ♦</lit> ♦ ♦ ♦</experience></a>
+                    <a><img class="icon" src="/assets/img/icons/ae.png" title="After Effects"><c>.</c><p>1 years</p><c>.</c><experience><lit>♦ ♦ ♦ ♦ ♦ ♦ ♦</lit> ♦ ♦ ♦</experience></a>
+                    <a><img class="icon" src="/assets/img/icons/ai.png" title="Illustrator"><c>.</c><p>4 years</p><c>.</c><experience><lit>♦ ♦ ♦ ♦</lit> ♦ ♦ ♦ ♦ ♦ ♦</experience></a>
+                    <a><img class="icon" src="/assets/img/icons/blender.png" title="Blender"><c>.</c><p>2 years</p><c>.</c><experience><lit>♦ ♦</lit> ♦ ♦ ♦ ♦ ♦ ♦ ♦ ♦</experience></a>
+                    <a><img class="icon" src="/assets/img/icons/blockbench.png" title="Blockbench"><c>.</c><p>1 years</p><c>.</c><experience><lit>♦ ♦ ♦</lit> ♦ ♦ ♦ ♦ ♦ ♦ ♦</experience></a>
+                </items>
+            </div>
+        </div>
+        <p><i> The ♦ mean how confident I am with each language or program!</i> (•᷄- •᷅ ;) </p>
+    </div>
+
+    <div id="empty"></div>
+
+    <div id="projects">
+        <p id="tag" style="background-color: #663846;">Projects</p>
+        <p id="update-info"><i>Last Update was 17th February 2025.</i></p>
+        <h1 class="darumadrop-one">Before starting,...</h1>
+        <p class="open-sans">All this projects were made in academic context or, for fun. They are here presented to show capacities or departments I tried to learn during these years! Some might not be a full game nor show enough gameplay for a DEMO of a full game, but they are still full of content that I'd like to learn more about or even work more to improve.</p>
+        <div id="list-projects">
+            <div>
+                <img src="/assets/img/projects/1.png">
+                <div id="text">
+                    <h1>Dungeon is Better</h1>
+                    <p>Inspired by auto-chess games (like TFT), a multiplayer game where you create a dungeon for your foe and then play his! Whoever does the deadliest dungeon or conquers the most dungeons is the winner!</p>
+                </div>
+                <div id="tags">
+                    <div id="project-t">
+                        Project:
+                        <div>3D</div>
+                        <div>Multiplayer</div>
+                        <div>Strategy</div>
+                        <div>C#</div>
+                        <div>Unreal Engine</div>
+                    </div>
+                    <div id="job-t">
+                        Jobs:
+                        <div>2D Art</div>
+                        <div>VFX</div>
+                        <div>Programmer</div>
+                        <div>Game Designer</div>
+                    </div>
+                </div>
+                <button onclick="window.open('https://docs.google.com/document/d/1V_CsKRxbKYJjMEm1THBu73RlE4iKahpAvZUCTXUflmE/edit?usp=sharing','_blank')"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24">
+                    <path d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h6l2 2h8q.825 0 1.413.588T22 8v10q0 .825-.587 1.413T20 20z" />
+                </svg></button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="empty"></div>
+
+    <footer>
+        <p>&copy; 2025 Seal the Seal - Portfolio</p>
+    </footer>
 </body>
 </html>
